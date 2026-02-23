@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+
+# macOS
+.DS_Store
+
+# Data (too large for GitHub)
+data/images/
+data/styles.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+env/
+
+# Streamlit
+.streamlit/
+
+# IDE
+.vscode/
