@@ -43,6 +43,9 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+## Live demo
+👉 https://brice-esade-vinted.streamlit.app/
+
 ## Assignment notes
 
 This prototype was built for the *Prototyping Products with Data and AI* course at Esade (MIBA 2026). It demonstrates:
