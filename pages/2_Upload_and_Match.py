@@ -95,7 +95,13 @@ SEASONS    = ["Summer", "Fall", "Winter", "Spring"]
 GENDERS    = ["Men", "Women", "Unisex"]
 CONDITIONS = ["New", "Like new", "Good", "Fair"]
 
-COHERE_API_KEY = st.secrets.get("COHERE_API_KEY", os.getenv("COHERE_API_KEY", ""))
+def get_cohere_api_key() -> str:
+    try:
+        return st.secrets["COHERE_API_KEY"]
+    except Exception:
+        return os.getenv("COHERE_API_KEY", "")
+
+COHERE_API_KEY = get_cohere_api_key()
 IMAGE_DIR = "data/images"
 
 # ─────────────────────────────────────────────
